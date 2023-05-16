@@ -1,0 +1,291 @@
+@media (max-width:1179px) {
+    .help-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px !important;
+        max-width: 600px !important;
+    }
+    .price-list {
+        flex-wrap: wrap;
+    }
+    .price-list__item {
+        align-items: center;
+    }
+    .price-list__item+.price-list__item {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width:1098px) {
+    .howisgoing-list::after {
+        left: 65%;
+    }
+}
+
+@media (max-width: 1040px) {
+    .video-wrapper::before {
+        opacity: 30%;
+    }
+    .howisgoing-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .howisgoing-list::before {
+        content: none;
+    }
+    .howisgoing-list::after {
+        content: none;
+    }
+    .howisgoing-list__item+.howisgoing-list__item {
+        padding-top: 25px;
+    }
+    .howisgoing-list__item:not(:last-child) {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #EAF2F5;
+    }
+}
+
+@media (max-width:1024px) {
+    .introduction-container {
+        background-image: url(../images/introdution-bg-for-mobile.png);
+        background-size: cover;
+        background-position-y: 50%;
+    }
+}
+
+@media (max-width:912px) {
+    .technologies-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .technologies-img {
+        margin: 0;
+    }
+    .technologies-content__list {
+        justify-content: center;
+    }
+    .technologies-content__title {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .video-wrapper__video--active {
+        height: 50vh;
+    }
+    .footer-additional {
+        flex-direction: column;
+    }
+    .footer-additional__block {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-list {
+        position: absolute;
+        transition: opacity .3s;
+        width: 266px;
+        max-height: 600px;
+        top: 0px;
+        padding: 53px 0 20px 31px;
+        right: 10px;
+        bottom: 25px;
+        background-color: #fff;
+        align-items: start;
+        flex-direction: column;
+        margin: 15px 0 0 0;
+        border-radius: 20px;
+        z-index: -1;
+        opacity: 0;
+    }
+    .menu-list__item {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 100%;
+    }
+    .menu-list__item+.menu-list__item {
+        margin: 12px 0 0 0;
+    }
+    .account-btns {
+        display: flex;
+        opacity: 0;
+        position: absolute;
+        transition: opacity .3s;
+        flex-direction: column;
+        right: 105px;
+        top: 300px;
+        font-size: 20px;
+        z-index: -1;
+    }
+    .header-wrapper--active::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+    .header-wrapper--active .menu-list,
+    .header-wrapper--active .account-btns {
+        z-index: 2;
+        opacity: 1;
+    }
+    .btn-signup {
+        font-size: inherit;
+        margin-bottom: 20px;
+    }
+    .btn-login {
+        font-size: inherit;
+    }
+    .btn-login::before {
+        top: 16px;
+        left: 20px;
+    }
+    .header-wrapper__close-menu {
+        display: inline-block;
+    }
+    .header-wrapper__toggle-menu {
+        display: inline-block;
+    }
+    .introduction-title {
+        margin-bottom: 10px;
+        font-size: 33px;
+        line-height: 33px;
+    }
+    .price-additional {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 44px 18px 43px 24px;
+    }
+    .price-additional__btn {
+        padding: 19px 85px 20px 43px;
+        letter-spacing: 0px;
+    }
+    .price-additional__btn::after {
+        top: 22px;
+        right: 59px;
+    }
+    .footer-block__info {
+        max-width: 310px;
+    }
+}
+
+@media (max-width: 680px) {
+    .introduction-container {
+        position: relative;
+        padding-top: 25px;
+        padding-bottom: 300px;
+        text-align: center;
+        background-position-y: 18%;
+    }
+    .introduction-container::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 220px;
+        background-image: url(../images/introdution-img.png);
+        left: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        bottom: 31px;
+    }
+    .introduction-btn {
+        font-size: 17px;
+    }
+    .introduction-title {
+        margin-bottom: 10px;
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .introduction-text {
+        margin: 0 auto 20px;
+    }
+    .technologies-img {
+        display: none;
+    }
+    .video-wrapper__btn {
+        top: 20%;
+    }
+    .video-wrapper::before {
+        content: none;
+    }
+    .howisgoing-begin {
+        flex-direction: column;
+        border-radius: 30px;
+    }
+    .howisgoing-begin__btn {
+        margin-bottom: 10px;
+    }
+    .howisgoing-begin__text {
+        text-align: center;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-social__list {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+    .footer-block__info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-menu {
+        margin-bottom: 30px;
+    }
+    .footer-contacts__block {
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 540px) {
+    .video-wrapper__btn {
+        top: 12%;
+    }
+    .video-wrapper__btn::after {
+        content: none;
+    }
+    .footer-additional__block {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media(max-width: 442px) {
+    .title {
+        font-size: 32px;
+    }
+    .technologies-content__list {
+        font-size: 14px;
+    }
+    .howisgoing-list {
+        padding: 36px 20px;
+    }
+    .howisgoing-begin__text {
+        font-size: 14px;
+    }
+    .help-item__title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .help-item__text {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 380px) {
+    .video-wrapper__btn {
+        top: 7%;
+    }
+}
